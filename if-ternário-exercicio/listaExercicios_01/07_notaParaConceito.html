@@ -1,0 +1,23 @@
+<meta charset="UTF-8" />
+<script>
+    //Problema: Nota para Conceito
+    // Converta a nota para conceito, conforme a tabela abaixo:
+    // Nota                     Conceito
+    // Entre 10.0 e 9.0            A
+    // Entre 8.9 e 8.0             B
+    // Entre 7.9 e 7.0             C
+    // Entre 6.9 e 6.0             D
+    // Entre 5.9 e zero            E
+
+    //Entrada
+    const notaAtual = parseInt(prompt("Informe sua nota atual:"));
+
+    //Processamento
+    (notaAtual <= 5.9)?alert (`Sua nota é E`)
+    : (notaAtual <= 6.9)? alert (`Sua nota é D`)
+    : (notaAtual <= 7.9)? alert (`Sua nota é C`)
+    : (notaAtual <= 8.9)? alert (`Sua nota é B`)
+    : alert(`Sua nota é A`);
+    //Saída
+
+</script>

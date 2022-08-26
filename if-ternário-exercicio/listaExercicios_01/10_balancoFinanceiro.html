@@ -1,0 +1,28 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<script>
+    //Problema: Balanço financeiro
+    // Faça um script que peça para o usuário informar as despesas relacionadas com:
+    // - Conta de água
+    // - Conta de energia elétrica
+    // - Conta de telefone
+    // - Supermercado
+    // Também peça para o usuário informar o valor que recebe de remuneração mensal (salário), proveniente da sua atuação profissional.
+    // Verifique se o usuário ganha mais do que recebe e apresente em tela, indicando quanto que sobrou após o pagamento das contas ou quanto que faltou para poder pagar todas as contas previstas.
+
+    //Entrada
+    const contaDeAgua = parseInt(prompt("Informe a conta de água do mês:"));
+    const contaDeEnergia = parseInt(prompt("Informe a conta de energia do mês:"));
+    const contaDeTelefone = parseInt(prompt("Informe a conta de telefone do mês:"));
+    const gastoComMercado = parseInt(prompt("Informe a conta com mercado no mês:"));
+    const salario = parseInt(prompt("Informe o seu salário mensal:"));
+    //Processamento
+    const gastoTotal = contaDeAgua + contaDeEnergia + contaDeTelefone + gastoComMercado ;
+    const restante = salario - gastoComMercado ;
+
+    (restante <= 0)? alert(`O seu salário não é suficiente para pagar as contas do mês, faltou ${restante} reais.`)
+    : alert(`O seu salário mensal foi suficiente para pagar as contas, e ainda sobrou ${restante}`);
+
+    
+    //Saída
+    
+</script>
